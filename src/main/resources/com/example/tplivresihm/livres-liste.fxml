@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tplivresihm.LivresListe">
+
+    <children>
+        <VBox fx:id="Vbox" prefHeight="611.0" prefWidth="822.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <MenuBar>
+                    <menus>
+                        <Menu mnemonicParsing="false" text="Livres">
+                            <items>
+                                <MenuItem mnemonicParsing="false" text="Ajouter un livre" />
+                                <MenuItem mnemonicParsing="false" text="Modifier un livre" />
+                                <MenuItem mnemonicParsing="false" text="Retourner à l'accueil" />
+                            </items>
+                        </Menu>
+                    </menus>
+                </MenuBar>
+            <TableView prefHeight="374.0" prefWidth="300.0">
+              <columns>
+                <TableColumn prefWidth="109.60003662109375" text="Nom du livre" />
+                <TableColumn prefWidth="103.199951171875" text="Auteur" />
+                  <TableColumn prefWidth="88.7999267578125" text="ISBN" />
+              </columns>
+               <VBox.margin>
+                  <Insets right="300.0" />
+               </VBox.margin>
+            </TableView>
+            </children>
+        </VBox>
+    </children>
+
+
+</AnchorPane>

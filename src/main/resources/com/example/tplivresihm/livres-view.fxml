@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorpane_global" prefHeight="611.0" prefWidth="822.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.livre_ihm.LivreAppli">
+   <children>
+      <VBox fx:id="vbox_global" prefHeight="611.0" prefWidth="822.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <MenuBar fx:id="menubar_global">
+               <menus>
+                  <Menu fx:id="menubar_livres" mnemonicParsing="false" text="Livres">
+                     <items>
+                        <MenuItem fx:id="menubar_livres_menuitem_liste" mnemonicParsing="false" text="Voir la liste des livres" />
+                        <MenuItem fx:id="menubar_livres_menuitem_ajouter" mnemonicParsing="false" text="Ajouter un livre" />
+                        <MenuItem mnemonicParsing="false" text="Modifier un livre" />
+                     </items>
+                  </Menu>
+               </menus>
+            </MenuBar>
+            <AnchorPane prefHeight="611.0" prefWidth="822.0">
+               <children>
+                  <Label fx:id="labelTitre_global" layoutX="227.0" layoutY="40.0" text="Gestion de la bibiliothèque">
+                     <font>
+                        <Font size="31.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="imagebiblio_global" fitHeight="369.0" fitWidth="556.0" layoutX="133.0" layoutY="137.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../../../OneDrive/Images/bibiliotèque.jpeg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
